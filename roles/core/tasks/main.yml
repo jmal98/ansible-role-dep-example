@@ -1,0 +1,3 @@
+---
+  - name: Do some common work
+    debug: msg="Did some common work."

@@ -1,0 +1,13 @@
+---
+- hosts: all
+  vars:
+   home: /usr/local/app
+   release: "{{ lookup('env','RELEASE') }}"
+   group: "{{ lookup('env','GROUP') }}"
+    
+  roles:
+  - core
+  
+  # Component Specific Stuff
+  - { role: app-compA, when: group== 'compA' }
+  - { role: app-compB, when: group== 'compB' }

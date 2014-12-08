@@ -1,0 +1,3 @@
+---
+  - name: Do some app-common work
+    debug: msg="Did some app-common work."

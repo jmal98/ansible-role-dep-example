@@ -1,0 +1,3 @@
+---
+  - name: Do some app-compA work
+    debug: msg="Did some app-compA work."
